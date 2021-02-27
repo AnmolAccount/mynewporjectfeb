@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumTraining" duration-ms="30227" started-at="2021-02-27T02:13:38Z" finished-at="2021-02-27T02:14:08Z">
+    <groups>
+    </groups>
+    <test name="TestNGScripts" duration-ms="30227" started-at="2021-02-27T02:13:38Z" finished-at="2021-02-27T02:14:08Z">
+      <class name="com.qa.testcases.Testcase1">
+        <test-method status="PASS" signature="openbrowserTest()[pri:0, instance:com.qa.testcases.Testcase1@1e5031f]" name="openbrowserTest" is-config="true" duration-ms="8251" started-at="2021-02-27T02:13:38Z" finished-at="2021-02-27T02:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowserTest -->
+        <test-method status="FAIL" signature="SearchboxTest()[pri:49, instance:com.qa.testcases.Testcase1@1e5031f]" name="SearchboxTest" duration-ms="5536" started-at="2021-02-27T02:13:46Z" finished-at="2021-02-27T02:13:52Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 3.000
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-N0G0NBDP', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\VISHAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58278218a4212c4bea4ca8a9cb72af6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 3.000
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-N0G0NBDP', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\VISHAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58278218a4212c4bea4ca8a9cb72af6
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.qa.testcases.Testcase1.SearchboxTest(Testcase1.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchboxTest -->
+        <test-method status="PASS" signature="mainPageTest()[pri:50, instance:com.qa.testcases.Testcase1@1e5031f]" name="mainPageTest" duration-ms="4704" started-at="2021-02-27T02:13:52Z" finished-at="2021-02-27T02:13:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainPageTest -->
+        <test-method status="PASS" signature="CreateAccountPageTest()[pri:51, instance:com.qa.testcases.Testcase1@1e5031f]" name="CreateAccountPageTest" duration-ms="5603" started-at="2021-02-27T02:13:56Z" finished-at="2021-02-27T02:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccountPageTest -->
+        <test-method status="PASS" signature="dropdownTest()[pri:52, instance:com.qa.testcases.Testcase1@1e5031f]" name="dropdownTest" duration-ms="5510" started-at="2021-02-27T02:14:02Z" finished-at="2021-02-27T02:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.Testcase1@1e5031f]" name="closeBrowser" is-config="true" duration-ms="543" started-at="2021-02-27T02:14:07Z" finished-at="2021-02-27T02:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.Testcase1 -->
+    </test> <!-- TestNGScripts -->
+  </suite> <!-- SeleniumTraining -->
+</testng-results>
