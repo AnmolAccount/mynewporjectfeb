@@ -85,6 +85,8 @@ public class Testcase1 {
 	@AfterClass
 	public void closeBrowser()
 	{
+		
+		System.out.println("Close the browser");
 		driver.close();
 	}
 	
